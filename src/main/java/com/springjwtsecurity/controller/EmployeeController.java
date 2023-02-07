@@ -41,7 +41,7 @@ public class EmployeeController {
 		String encPass = encoder.encode(emp.getPassword());
 		emp.setPassword(encPass);
 		employeeRepository.save(emp);
-		return "Employee Added!";
+		return "Employee Added Successfully!";
 		} 
 		catch (Exception e){
 			e.printStackTrace();
